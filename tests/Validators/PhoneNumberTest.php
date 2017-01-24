@@ -25,6 +25,8 @@ class EmailTest extends PHPUnit_Framework_TestCase
 
         /* MUST not VALIDATE */
         $testValues[] = array("value"=>null,"isValid"=>false);
+        $testValues[] = array("value"=>"3412345","isValid"=>false);
+        $testValues[] = array("value"=>"3412345678901234","isValid"=>false);
         $testValues[] = array("value"=>"+34123456789","isValid"=>false);
         $testValues[] = array("value"=>"(+34)123456789","isValid"=>false);
         $testValues[] = array("value"=>"+34 123456789","isValid"=>false);
