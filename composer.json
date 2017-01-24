@@ -1,0 +1,18 @@
+{
+  "name": "caminalab/validators",
+  "description": "Some basic validators",
+  "authors": [
+    {
+      "name": "Joan Valls",
+      "email": "joan@iggeos.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Caminalab\\": "src/"
+    }
+  },
+  "require": {
+    "phpunit/phpunit": "^5.7"
+  }
+}
