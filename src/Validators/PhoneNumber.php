@@ -24,6 +24,6 @@ class PhoneNumber implements ValidatorInterface
      */
     public function isValid($number)
     {
-        return preg_match('/^\d{8,15}$/', $number);
+        return preg_match('/^\d{8,15}$/', $number) == 1 ? true : false;
     }
 }
