@@ -18,7 +18,7 @@ class PhoneNumberTest extends PHPUnit_Framework_TestCase
         $this->validator = new Email();
     }
 
-    public function testPhoneNumber(){
+    public function testEmail(){
         $testValues = array();
 
         /* MUST not VALIDATE */
@@ -29,7 +29,7 @@ class PhoneNumberTest extends PHPUnit_Framework_TestCase
         $testValues[] = array("value"=>"+denisewalters@stkittsscenicrailway.com","isValid"=>false);
 
         /* MUST VALIDATE */
-        $testValues[] = array("value"=>"joan@igeos.com","isValid"=>true);
+        $testValues[] = array("value"=>"user@domain.com","isValid"=>true);
 
 
         foreach($testValues as $em){
