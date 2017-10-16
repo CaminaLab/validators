@@ -24,8 +24,8 @@ class Email implements ValidatorInterface
      */
     public function isValid($email)
     {
-        return preg_match('/\A[A-Za-z0-9]+([-._\+][A-Za-z0-9\+]+)*@([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,4}\z/', $email)
-        && preg_match('/^(?=.{1,64}@.{4,64}$)(?=.{6,100}$).*/', $email)
-        && false !== filter_var($email, FILTER_VALIDATE_EMAIL);
+        return preg_match('/\A[A-Za-z0-9-._\+]@([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,4}\z/', $email)
+            && preg_match('/^(?=.{1,64}@.{4,64}$)(?=.{6,100}$).*/', $email)
+            && false !== filter_var($email, FILTER_VALIDATE_EMAIL);
     }
 }
