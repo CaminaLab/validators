@@ -31,6 +31,7 @@ class PhoneNumberTest extends PHPUnit_Framework_TestCase
         /* MUST VALIDATE */
         $testValues[] = array("value"=>"joan@igeos.com","isValid"=>true);
         $testValues[] = array("value"=>"joan_@igeos.com","isValid"=>true);
+        $testValues[] = array("value"=>"abengoa@carlsonwagonlit.es","isValid"=>true);
 
 
         foreach($testValues as $em){
